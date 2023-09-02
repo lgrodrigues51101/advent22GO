@@ -25,11 +25,13 @@ func main()  {
 		// used ascii value to simplify
 		switch y {
 		case 'X':
+			// lose
 			score = (int(x) - 63) % 3 + 1 // (v - 1 - 65 + 3) % 3 + 1
 		case 'Y':
 			// draw
 			score = int(x) - 61 // v - 65 + 1 + 3 
 		case 'Z':
+			// win
 			score = (int(x) - 64) % 3 + 7 // (v + 1 - 65) % 3 + 7
 		}
 		total += score
