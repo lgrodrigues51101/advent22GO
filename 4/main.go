@@ -8,11 +8,6 @@ import (
 	"strings"
 )
 
-type Elf struct {
-	first  int
-	second int
-}
-
 func main() {
 	file, _ := os.Open("input")
 	defer file.Close()
